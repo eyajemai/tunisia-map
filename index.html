@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte Interactive de la Tunisie</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+
+
+<body>
+    <div class="header">
+        <h1>Carte de la Tunisie</h1>
+        <p>Explorez les 24 gouvernorats - Survolez et cliquez sur les régions</p>
+    </div>
+
+    <div class="map-container">
+         <div class="map-container">
+        <div class="map-wrapper" id="mapWrapper">
+            <img src="tunisia-major-cities-map.jpg" alt="Carte de Tunisie" class="map-image" id="mapImage">
+            <svg viewBox="0 0 920 1320" preserveAspectRatio="none">
+                <!-- Bizerte -->
+                <path class="region-path" data-region="bizerte"
+                    d="M 400,70 L 510,70 L 530,110 L 520,140 L 470,155 L 400,135 Z"/>
+                
+                <!-- Ariana -->
+                <path class="region-path" data-region="ariana"
+                    d="M 475,100 L 520,105 L 525,135 L 510,155 L 475,150 Z" />
+                
+                <!-- Tunis -->
+                <path class="region-path" data-region="tunis"
+                    d="M 480,155 L 520,160 L 520,185 L 495,195 L 470,185 Z" />
+                
+                <!-- Manouba -->
+                <path class="region-path" data-region="manouba"
+                    d="M 410,125 L 470,130 L 475,175 L 455,200 L 405,185 Z" />
+                
+                <!-- Ben Arous -->
+                <path class="region-path" data-region="benArous"
+                    d="M 465,190 L 505,195 L 510,225 L 485,240 L 455,230 Z" />
+                
+                <!-- Nabeul -->
+                <path class="region-path" data-region="nabeul"
+                    d="M 525,155 L 605,165 L 615,215 L 585,245 L 515,235 Z" />
+                
+                <!-- Jendouba -->
+                <path class="region-path" data-region="jendouba"
+                    d="M 240,110 L 360,125 L 385,180 L 370,245 L 295,260 L 235,200 Z" />
+                
+                <!-- Béja -->
+                <path class="region-path" data-region="beja"
+                    d="M 365,165 L 420,172 L 430,220 L 410,255 L 365,245 Z" />
+                
+                <!-- Le Kef -->
+                <path class="region-path" data-region="kef"
+                    d="M 260,265 L 345,265 L 375,330 L 355,380 L 270,370 Z" />
+                
+                <!-- Siliana -->
+                <path class="region-path" data-region="siliana"
+                    d="M 360,255 L 425,260 L 445,325 L 420,375 L 360,380 Z" />
+                
+                <!-- Zaghouan -->
+                <path class="region-path" data-region="zaghouan"
+                    d="M 450,240 L 520,245 L 535,295 L 515,330 L 450,320 Z" />
+                
+                <!-- Sousse -->
+                <path class="region-path" data-region="sousse"
+                    d="M 520,285 L 595,295 L 600,345 L 575,375 L 520,365 Z" />
+                
+                <!-- Kairouan -->
+                <path class="region-path" data-region="kairouan"
+                    d="M 425,330 L 515,340 L 530,415 L 495,460 L 420,445 Z" />
+                
+                <!-- Monastir -->
+                <path class="region-path" data-region="monastir"
+                    d="M 530,380 L 595,385 L 600,435 L 575,465 L 530,455 Z" />
+                
+                <!-- Mahdia -->
+                <path class="region-path" data-region="mahdia"
+                    d="M 535,465 L 590,475 L 595,540 L 565,570 L 520,555 Z" />
+                
+                <!-- Kasserine -->
+                <path class="region-path" data-region="kasserine"
+                    d="M 245,385 L 350,395 L 385,490 L 365,555 L 255,535 Z" />
+                
+                <!-- Sidi Bouzid -->
+                <path class="region-path" data-region="sidiBouzid"
+                    d="M 370,460 L 460,470 L 485,565 L 455,615 L 370,590 Z" />
+                
+                <!-- Sfax -->
+                <path class="region-path" data-region="sfax"
+                    d="M 460,575 L 565,595 L 580,695 L 540,745 L 460,715 Z" />
+                
+                <!-- Gafsa -->
+                <path class="region-path" data-region="gafsa"
+                    d="M 240,555 L 360,570 L 395,685 L 375,745 L 250,720 Z" />
+                
+                <!-- Gabès -->
+                <path class="region-path" data-region="gabes"
+                    d="M 395,700 L 520,730 L 540,805 L 510,855 L 420,825 Z" />
+                
+                <!-- Tozeur -->
+                <path class="region-path" data-region="tozeur"
+                    d="M 170,650 L 260,665 L 285,770 L 250,815 L 170,785 Z" />
+                
+                <!-- Kébili -->
+                <path class="region-path" data-region="kebili"
+                    d="M 250,820 L 380,850 L 415,985 L 395,1065 L 280,1020 Z" />
+                
+                <!-- Médenine -->
+                <path class="region-path" data-region="medenine"
+                    d="M 480,870 L 590,890 L 605,1015 L 565,1080 L 480,1045 Z" />
+                
+                <!-- Tataouine -->
+                <path class="region-path" data-region="tataouine"
+                    d="M 320,1070 L 475,1100 L 505,1250 L 475,1310 L 350,1270 Z" />
+            </svg>
+        </div>
+
+        <div class="legend">
+            <h3>💡 Comment utiliser la carte</h3>
+            <p>✨ <strong>Survolez</strong> une région pour la voir en surbrillance dorée</p>
+            <p>🖱️ <strong>Cliquez</strong> sur une région pour découvrir tous ses détails</p>
+            <p>🗺️ <strong>24 gouvernorats</strong> à explorer avec leurs richesses</p>
+        </div>
+    </div>
+
+    <div class="tooltip" id="tooltip"></div>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close-btn" onclick="closeModal()">×</button>
+                <h2 id="modalTitle"></h2>
+                <p id="modalSubtitle"></p>
+            </div>
+            <div class="modal-body" id="modalBody"></div>
+        </div>
+    </div>
+ <script src="script.js"></script>
+    
+</body>
+</html>
